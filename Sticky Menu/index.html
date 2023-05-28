@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #logo {
+            width: 250px;
+            height: auto;
+        }
+
+        #menu-bar {
+            text-align: center;
+            background-color: cadetblue;
+        }
+
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #about-img {
+            width: 100%;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://www.logodesign.net/images/nature-logo.png" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="about-img"
+            src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg"
+            alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, voluptatibus totam? Nulla, debitis
+            delectus necessitatibus id ipsam eligendi amet voluptatum est magni optio ad saepe beatae molestiae dolorum
+            ea, dolore pariatur? Minus blanditiis aspernatur cupiditate voluptate? Delectus optio facere tenetur sequi
+            veritatis. Delectus fugiat earum blanditiis quidem libero voluptatum dicta quod ipsa non obcaecati odio
+            optio quo repellendus incidunt nostrum consequatur esse vero cupiditate nesciunt omnis tenetur, id,
+            voluptate molestiae labore? Excepturi explicabo minus magni iusto repudiandae corrupti illo maxime debitis
+            quibusdam cupiditate natus distinctio ducimus quos reprehenderit, quae corporis tempore sequi asperiores sed
+            exercitationem facere commodi! Sapiente beatae sunt ex, maxime odit expedita corporis atque culpa in
+            deserunt incidunt laudantium aspernatur consequuntur explicabo impedit molestiae assumenda deleniti
+            laboriosam amet reprehenderit excepturi est debitis recusandae ipsa? Repellendus esse blanditiis harum
+            itaque doloribus inventore, pariatur, repudiandae excepturi voluptas nostrum iusto saepe sint dolor
+            recusandae deleniti quis omnis nobis reiciendis! Maxime, eaque nostrum quaerat accusamus expedita quae.
+            Rerum, quidem alias, reiciendis vel dolore excepturi voluptate debitis dicta ipsa ut accusamus libero iste
+            sed delectus corrupti soluta perspiciatis. Mollitia dolor modi fuga sapiente, nesciunt odit placeat
+            provident exercitationem? Quaerat tempore consequatur maiores est dolore sequi consequuntur accusamus eaque
+            maxime, voluptatum nulla enim esse, porro delectus corporis nemo quisquam nesciunt impedit neque obcaecati?
+            Dolorum exercitationem et ipsum accusamus, eos dolores. Illo adipisci unde et beatae expedita cum facere
+            deleniti, sapiente quisquam, suscipit sequi. Sequi reiciendis delectus, nobis commodi error unde iusto
+            praesentium minus voluptates nisi magni perspiciatis dignissimos obcaecati voluptate quae soluta explicabo
+            eveniet dicta veniam! Omnis, blanditiis nemo placeat itaque sit esse debitis totam illum voluptatum commodi
+            voluptate officia suscipit ratione nesciunt doloremque repellat quis, exercitationem obcaecati delectus
+            dolore est. Sit, libero. Consectetur laboriosam dolorum voluptatum quaerat officia veniam. Ad sit accusamus
+            temporibus molestiae modi incidunt, dolor possimus expedita tempora eius itaque dolorem, qui debitis? Rem
+            voluptas architecto vitae omnis similique! Consequatur ad provident eveniet ea corporis minima? Sequi ea
+            dolores accusantium unde, debitis necessitatibus, amet numquam, consectetur quia quas quos odio? Dolores
+            animi commodi fuga. Ipsam numquam quo, veritatis officiis laborum commodi nostrum culpa modi quos est! Iste
+            cumque odit inventore quisquam fuga perferendis tempora doloremque labore minima molestias? Illum aliquam
+            enim assumenda, aliquid doloremque repellendus. Animi ipsum aperiam sed eius quia quibusdam, fugiat
+            perspiciatis molestiae. Facere eligendi quod fugiat blanditiis aliquam in, possimus aut facilis? Repellat
+            harum vitae natus, animi aperiam itaque! Aliquam nisi ipsam rem ipsum fugit ducimus consequatur corporis hic
+            iusto aspernatur necessitatibus, repellat quibusdam. Quos ratione, perspiciatis asperiores, possimus optio
+            magni illo cum placeat ducimus modi autem voluptate fugit eum est rem aliquam alias ea, provident
+            repellendus beatae quae. Assumenda iure adipisci tenetur excepturi dicta natus harum laboriosam eveniet odit
+            quis, perspiciatis possimus nesciunt quaerat deserunt impedit voluptatem? Sequi dignissimos reiciendis
+            incidunt fuga blanditiis, nemo non quis. In accusamus, alias consequatur aspernatur neque exercitationem
+            obcaecati facilis nobis voluptas cum dicta? Saepe, voluptates quos. Dolore pariatur ducimus ea natus, iste
+            enim? Inventore exercitationem recusandae voluptates minus vitae ipsam ex, tenetur expedita, quidem incidunt
+            non, impedit reprehenderit consequatur eius soluta!</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            let navbar = document.getElementById("menu-bar");
+            if (window.pageYOffset >= 190) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+
+</html>
